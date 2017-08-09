@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+    <property>
+        <name>dfs.nameservices</name>
+        <value>hadoop-cluster-dfs</value>
+    </property>
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>master.hadoop.node:50090</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///data/hadoop/dfs/name</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///data/hadoop/dfs/data</value>
+    </property>
+    <property>
+        <name>dfs.datanode.max.transfer.threads</name>
+        <value>8192</value>
+    </property>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>dfs.webhdfs.enabled</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>dfs.permissions</name>
+        <value>false</value>
+    </property>
+    <property>
+        　　
+        <name>dfs.balance.bandwidthPerSec</name>
+        　　
+        <value>10485760</value>
+        　　
+        <description>
+            10M
+            　　　　Specifies the maximum amount of bandwidth that each datanode
+            　　　　can utilize for the balancing purpose in term of
+            　　　　the number of bytes per second.
+            　　
+        </description>
+    </property>
+
+
+</configuration>
